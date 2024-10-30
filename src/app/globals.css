@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+  --primary: #64748b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
