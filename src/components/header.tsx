@@ -1,6 +1,5 @@
 import GithubLogo from "./logos/github";
 import LinkedInLogo from "./logos/linkedin";
-import GitLogo from "./logos/git";
 
 const logos = [
   {
@@ -15,7 +14,7 @@ const logos = [
 
 export default function Header() {
   return (
-    <header className="bg-pink-500 sticky top-24 h-[calc(100vh-12rem)] w-1/2 flex flex-col justify-between">
+    <header className="sticky top-24 h-[calc(100vh-12rem)] w-1/2 flex flex-col justify-between">
       <div>
         <h1 className="text-4xl font-bold">Tommy Akonguina</h1>
         <p className="text-xl font-light">Web & mobile developer</p>
@@ -24,7 +23,7 @@ export default function Header() {
         </p>
         <div className="flex space-x-2">
           {logos.map(({ LogoComponent, link }, index) => {
-            const Logo = LogoComponent; // Récupération de la référence du composant
+            const Logo = LogoComponent;
             return (
               <a
                 key={index}
@@ -39,17 +38,16 @@ export default function Header() {
           })}
         </div>
       </div>
-      <div className="flex">
-        <p>This project is open source on Github </p>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-transform transform"
-        >
-          <GitLogo className="text-primary transition-colors hover:text-white" />
-        </a>
-      </div>
+      <a
+        href="https://github.com/takonguina/personal-website"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="flex transition-colors text-primary hover:text-white">
+          <p className="mr-2">This project is open source on Github</p>
+          <GithubLogo className="text-current" />
+        </div>
+      </a>
     </header>
   );
 }
