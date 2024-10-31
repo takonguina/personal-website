@@ -14,11 +14,11 @@ const logos = [
 
 export default function Header() {
   return (
-    <header className="sticky top-24 h-[calc(100vh-12rem)] w-1/2 flex flex-col justify-between">
-      <div>
-        <h1 className="text-4xl font-bold">Tommy Akonguina</h1>
-        <p className="text-xl font-light">Web & mobile developer</p>
-        <p className="text-base text-primary">
+    <header className="lg:sticky top-24 lg:h-[calc(100vh-12rem)] h-auto w-full lg:w-1/2 flex flex-col justify-between my-12">
+      <div className="flex flex-col gap-4">
+        <h1 className="text-3xl md:text-4xl font-bold">Tommy Akonguina</h1>
+        <p className="text-lg md:text-xl font-light">Web & mobile developer</p>
+        <p className="text-base text-primary w-64">
           Creating seamless, engaging, and accessible web experiences.
         </p>
         <div className="flex space-x-2">
@@ -43,7 +43,7 @@ export default function Header() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="flex transition-colors text-primary hover:text-white">
+        <div className="flex transition-colors text-primary hover:text-white hidden lg:flex">
           <p className="mr-2">This project is open source on Github</p>
           <GithubLogo className="text-current" />
         </div>
