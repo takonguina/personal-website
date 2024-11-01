@@ -14,7 +14,7 @@ const logos = [
 
 export default function Header() {
   return (
-    <header className="lg:sticky top-24 lg:h-[calc(100vh-12rem)] h-auto w-full lg:w-1/2 flex flex-col justify-between my-12">
+    <header className="lg:sticky top-24 lg:h-[calc(100vh-12rem)] h-auto w-full lg:w-[38%] flex flex-col justify-between my-12">
       <div className="flex flex-col gap-4">
         <h1 className="text-3xl md:text-4xl font-bold">Tommy Akonguina</h1>
         <p className="text-lg md:text-xl font-light">Web & mobile developer</p>
