@@ -1,7 +1,7 @@
 export default function Feed() {
   return (
     <div className="lg:my-24 flex-1 text-primary">
-      Since I started as a developer, I've been passionate about building
+      Since I started as a developer, I&apos;ve been passionate about building
       digital experiences that go beyond code to solve real user needs. Today, I
       work as a full-stack JavaScript developer, focused on creating mobile apps
       with React Native and Expo. Alongside development, I’m drawn to
