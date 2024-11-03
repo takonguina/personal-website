@@ -15,5 +15,9 @@ export default function Experience({
   technologies,
   link,
 }: ExperienceProps) {
-  return <div>Expérience</div>;
+  return (
+    <div>
+      <div>Expérience</div>
+    </div>
+  );
 }
