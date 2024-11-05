@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 type ProjectProps = {
+  image: string;
   title: string;
   description: string;
   technologies: string[];
@@ -9,6 +10,7 @@ type ProjectProps = {
 };
 
 export default function Project({
+  image,
   title,
   description,
   technologies,
@@ -16,8 +18,15 @@ export default function Project({
   appleStore,
 }: ProjectProps) {
   return (
-    <div className="group flex py-4 lg:px-4 rounded-md">
-      <div className="w-[30%]">Image</div>
+    <a
+      className="group flex py-4 lg:px-4 rounded-md rounded-md lg:hover:shadow-lg transition duration-300 cursor-pointer lg:hover:bg-slate-800/50"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="w-[30%]">
+        <Image src={image} alt="Hercules" width={80} height={80} />
+      </div>
       <div className="w-full">
         <span className="group-hover:text-[var(--green)] transition duration-300 text-lg">
           {title}
@@ -35,17 +44,15 @@ export default function Project({
         </div>
         <div className="flex justify-end cursor-pointer">
           {appleStore && (
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/applestore.png"
-                alt="Apple Store"
-                width={101}
-                height={30}
-              />
-            </a>
+            <Image
+              src="/applestore.png"
+              alt="Apple Store"
+              width={101}
+              height={30}
+            />
           )}
         </div>
       </div>
-    </div>
+    </a>
   );
 }

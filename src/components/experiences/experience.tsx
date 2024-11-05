@@ -17,7 +17,7 @@ export default function Experience({
 }: ExperienceProps) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="group lg:flex lg:justify-between py-4 lg:px-4 rounded-md hover:shadow-lg transition duration-300 cursor-pointer hover:bg-slate-800/50 cursor-pointe">
+      <div className="group lg:flex lg:justify-between py-4 lg:px-4 rounded-md lg:hover:shadow-lg transition duration-300 cursor-pointer lg:hover:bg-slate-800/50">
         <span className="w-[30%] text-slate-500 text-sm">{time}</span>
         <div className="w-full flex flex-col">
           <span className="group-hover:text-[var(--green)] transition duration-300 text-lg">
