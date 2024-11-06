@@ -23,7 +23,7 @@ export default function Experiences() {
   ];
 
   return (
-    <div className="flex flex-col gap-8 mt-24">
+    <div className="flex flex-col max-lg:gap-12 gap-8">
       {experiences.map((experience, index) => (
         <Experience key={index} {...experience} />
       ))}

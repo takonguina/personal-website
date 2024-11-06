@@ -1,6 +1,6 @@
 export default function Description() {
   return (
-    <div className=" text-primary">
+    <div className="text-primary max-lg:py-12 pb-16">
       Since I started as a developer, I&apos;ve been passionate about building
       digital experiences that go beyond code to solve real user needs. Today, I
       work as a full-stack JavaScript developer, focused on creating mobile apps
